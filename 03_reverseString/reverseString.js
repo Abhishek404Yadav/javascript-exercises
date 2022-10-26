@@ -1,10 +1,8 @@
 const reverseString = function(name) {
-    let str=name;
-    let str1="";
-    for(let i=str.length-1;i>=0;i--){
-        str1=str1+str[i];
-    }
-    return str1;
+    return name.split("").reverse().join("");
+    //.split("")--> split the String every charecter to Array element with custom seprator none
+    //.reverse --> Reverse the Array 
+    //.join("")-->Convert the array to string with custom seprator none 
 };
 
 // Do not edit below this line
