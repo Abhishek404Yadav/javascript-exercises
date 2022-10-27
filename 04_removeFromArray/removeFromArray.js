@@ -1,13 +1,12 @@
 const removeFromArray = function(...args) {
     let arr=args[0];
-    for(let i=0; i<=arr.length;i++){
-        for(let j=1;j<=args.length;j++){
-             if(arr[i]===args[j]){
-                arr.splice(i,1);
-             }
-        }
-    }
-        return arr;
+    let newarray=[];
+    arr.forEach(element => {
+        if(!args.includes(element)) 
+        // check karta hai ki args me arr ka element hai ya nhi agar hota h to true ko negate false kar deta hai or wo nahi chalta otherwise  chalta hai or newarray me wo element push ho jata hai
+        newarray.push(element);
+    });
+        return newarray;
 };
 
 // Do not edit below this line
